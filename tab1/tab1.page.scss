@@ -1,0 +1,25 @@
+.post{
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 15px 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 lightblue;
+    font-family: 'Lucida sans';
+}
+
+.info{
+    margin-top: 5px;
+
+    .message{
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: 5px;
+    }
+
+    .user{
+        text-align: left;
+        font-weight: bold;
+        color: lightblue;
+        padding: 3px;
+    }
+}

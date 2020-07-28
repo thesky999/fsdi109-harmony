@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Message Feed
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+   <div class="post" *ngFor="let p of allPosts">
+    
+    <ion-img *ngIf="p.imageUrl" src="{{p.imageUrl}}"></ion-img>
+
+   <div class="info">
+      <h6 class="message">{{p.text}}</h6>
+      <label class="user">{{p.from}} </label>
+      <label class="timestamp">{{p.timeStamp | date:"EE, MMM dd, h:m aa"}}</label>
+    </div>
+  </div>
+</ion-content>
